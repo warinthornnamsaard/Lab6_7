@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>  
+            function ChangeColor(){          
+                let name = document.getElementById("username");      
+                name.style.color = "green"
+            }
+            function ChangeColor2(){                         
+                let age = document.getElementById("age");   
+                age.style.color = "green"  
+            }
+            function ChangeColor3(){                     
+                let bd = document.getElementById("bd");     
+                bd.style.color = "green"               
+            }            
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <form>
+            Name:
+            <input type="text" id="username" onfocusout="ChangeColor()" ><br>
+            Age:
+            <input type="text" id="age" onfocusout="ChangeColor2()" ><br>
+            Birthdate:
+            <input type="text" id="bd" onfocusout="ChangeColor3()" >            
+        </form>
+        
+    </body>
+</html>
